@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Albin Garcia">
+    <meta name="description" content="faculty">
+    <link rel="stylesheet" href="style.css">
+    <script src="final-exam.js" defer></script>
+    <title>BMCC | Faculty</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">CIS Faculty</h1>
+        <input type="text" id="searchBar" placeholder="Type Name" onkeyup="searchFaculty()">
+        <select id="filterDropdown" onchange="filterFaculty()">
+            <option value="">Filter by Title</option>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Lecturer">Lecturer</option>
+        </select>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Homepage</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Room</th>
+                    <th>OfficeHours</th>
+                </tr>
+            </thead>
+            <tbody id="facultyTable">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<!--
+ <select id="filterDropdown" onchange="filterFaculty()">
+            <option value="">Filter by Title</option>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Lecturer">Lecturer</option>
+        </select>
+-->
